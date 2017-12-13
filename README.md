@@ -10,7 +10,8 @@ Next you will go into this folder
 `cd /etc/nginx/sites-available/`
 
 copy and paste this into the folder
-``server {
+``
+server {
     listen 80;
 
     server_name CHANGETHISTOYOURDOMAINNAME.com;
@@ -23,6 +24,7 @@ copy and paste this into the folder
         proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
     }
-}``
+}
+``
  
 save `CTRL+O` `ENTER` `CTRL+X`
