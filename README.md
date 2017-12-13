@@ -66,6 +66,9 @@ The Certbot packages on your system come with a cron job that will renew your ce
 If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
  
     certbot renew 
-    
 
+
+###### https://github.com/anguyen3407/Hosting-React-Digital-Ocean
+###### https://letsencrypt.org/getting-started/
+###### https://certbot.eff.org/
 ###### https://certbot.eff.org/#ubuntuxenial-nginx
