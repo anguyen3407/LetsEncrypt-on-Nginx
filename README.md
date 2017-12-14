@@ -4,9 +4,11 @@ Short, simple and free way to secure your website.
 
 ## Install NGINX
 If you've already installed nginx, you can skip this step.
+
 `sudo apt-get install nginx;`
 
 Next you will go into this folder
+
 `cd /etc/nginx/sites-available/`
 
 copy and paste this into the folder
