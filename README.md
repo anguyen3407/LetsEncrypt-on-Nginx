@@ -54,9 +54,10 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
     $ sudo apt-get update
     $ sudo apt-get install software-properties-common
     $ sudo add-apt-repository ppa:certbot/certbot
-    ** press [enter] to continue
+    ** press [enter] to accept and continue
     $ sudo apt-get update
     $ sudo apt-get install python-certbot-nginx 
+    ** enter your email address
     
  ### Get Started
  Certbot has an Nginx plugin, which is supported on many platforms, and automates both obtaining and installing certs:
@@ -68,8 +69,9 @@ Running this command will get a certificate for you and have Certbot edit your N
     
     $ sudo certbot --nginx certonly
     ** Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
-       ***Select [2] and then [enter]
-       #### Congratulations! Your https is activated! Now process to the next step to renew your certificate automatically.
+       *** Select [2] and then [enter]
+       
+#### Congratulations! Your https is activated! Now proceed to the next step to renew your certificate automatically.
     
  ### Automating renewal
 The Certbot packages on your system come with a cron job that will renew your certificates automatically before they expire. Since Let's Encrypt certificates last for 90 days, it's highly advisable to take advantage of this feature. You can test automatic renewal for your certificates by running this command:
