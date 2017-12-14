@@ -76,6 +76,17 @@ If that appears to be working correctly, you can arrange for automatic renewal b
     certbot renew 
 
 
+# Troubleshooting
+Some reasons your https is still not working
+
+1. Your proxy_pass is incorrect
+** Open up your terminal
+
+`cd /etc/nginx/sites-available/`
+
+** Copy and paste the proxy_pass below and insert your port number
+
+            proxy_pass http://127.0.0.1:ADDYOURPORTNUMBER;
 
 
 ###### https://github.com/anguyen3407/Hosting-React-Digital-Ocean
