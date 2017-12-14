@@ -68,8 +68,8 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
 Running this command will get a certificate for you and have Certbot edit your Nginx configuration automatically to serve it. If you're feeling more conservative and would like to make the changes to your Nginx configuration by hand, you can use the certonly subcommand:
     
     $ sudo certbot --nginx certonly
-        ** Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
-            ** Select [2] and then [enter]
+        Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+           ** Select [2] and press [enter]
        
 #### Congratulations! Your https is activated! Now proceed to the next step to renew your certificate automatically.
     
