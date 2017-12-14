@@ -5,6 +5,14 @@ Short, simple and free way to secure your website.
 ## Install NGINX
 If you've already installed nginx, you can skip this step.
 
+go in to your root terminal
+
+    ssh root@YOURDOMAINNAME.com
+
+    ** enter your password
+    
+Install nginx
+    
 `sudo apt-get install nginx;`
 
 Next you will go into this folder
@@ -54,16 +62,21 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
     $ sudo apt-get update
     $ sudo apt-get install software-properties-common
     $ sudo add-apt-repository ppa:certbot/certbot
-        ** press [enter] to accept and continue
+            ** press [enter] to accept and continue
     $ sudo apt-get update
     $ sudo apt-get install python-certbot-nginx 
-        ** enter your email address
+        Do you want to continue?
+            ** press [y]
     
  ### Get Started
  Certbot has an Nginx plugin, which is supported on many platforms, and automates both obtaining and installing certs:
  
     $ sudo certbot --nginx
-        ** Select name you would like to activate HTTPS for
+            ** Select name you would like to activate HTTPS for
+            ** enter you email address for urgent renewal and security purposes
+        Agree to terms of service
+            ** press [A]
+        
     
 Running this command will get a certificate for you and have Certbot edit your Nginx configuration automatically to serve it. If you're feeling more conservative and would like to make the changes to your Nginx configuration by hand, you can use the certonly subcommand:
     
