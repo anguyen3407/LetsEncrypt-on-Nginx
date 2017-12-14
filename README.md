@@ -87,7 +87,8 @@ Some reasons your https is still not working
 ** Copy and replace the proxy_pass below and insert your port number
 
             proxy_pass http://127.0.0.1:ADDYOURPORTNUMBER;
-
+            
+Save and Exit
 
 ###### https://github.com/anguyen3407/Hosting-React-Digital-Ocean
 ###### https://letsencrypt.org/getting-started/
