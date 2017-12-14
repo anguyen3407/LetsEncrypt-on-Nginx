@@ -54,22 +54,22 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
     $ sudo apt-get update
     $ sudo apt-get install software-properties-common
     $ sudo add-apt-repository ppa:certbot/certbot
-    ** press [enter] to accept and continue
+        ** press [enter] to accept and continue
     $ sudo apt-get update
     $ sudo apt-get install python-certbot-nginx 
-    ** enter your email address
+        ** enter your email address
     
  ### Get Started
  Certbot has an Nginx plugin, which is supported on many platforms, and automates both obtaining and installing certs:
  
     $ sudo certbot --nginx
-    **select name you would like to activate HTTPS for
+        ** Select name you would like to activate HTTPS for
     
 Running this command will get a certificate for you and have Certbot edit your Nginx configuration automatically to serve it. If you're feeling more conservative and would like to make the changes to your Nginx configuration by hand, you can use the certonly subcommand:
     
     $ sudo certbot --nginx certonly
-    ** Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
-       *** Select [2] and then [enter]
+        ** Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+            ** Select [2] and then [enter]
        
 #### Congratulations! Your https is activated! Now proceed to the next step to renew your certificate automatically.
     
