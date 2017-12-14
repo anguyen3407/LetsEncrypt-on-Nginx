@@ -41,6 +41,11 @@ Choose your software `nginx` and system `Ubuntu 16.04`
 
 #### Install 
 
+Open up your terminal 
+
+`ssh root@YOURDOMAINNAME.com`
+enter your password
+
 On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your list of repositories all you'll need to do is apt-get the following packages.
 
     $ sudo apt-get update
