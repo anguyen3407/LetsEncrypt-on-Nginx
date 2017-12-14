@@ -31,7 +31,7 @@ copy and paste this into the folder
 
 
  
-save `CTRL+O` `ENTER` `CTRL+X`
+save [CTRL+O] [enter] [CTRL+X]
 
 ## Let's Encrypt
 
@@ -54,7 +54,7 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
     $ sudo apt-get update
     $ sudo apt-get install software-properties-common
     $ sudo add-apt-repository ppa:certbot/certbot
-    ** press "Enter" to continue
+    ** press [enter] to continue
     $ sudo apt-get update
     $ sudo apt-get install python-certbot-nginx 
     
@@ -67,6 +67,9 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
 Running this command will get a certificate for you and have Certbot edit your Nginx configuration automatically to serve it. If you're feeling more conservative and would like to make the changes to your Nginx configuration by hand, you can use the certonly subcommand:
     
     $ sudo certbot --nginx certonly
+    ** Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
+       ***Select [2] and then [enter]
+       #### Congratulations! Your https is activated! Now process to the next step to renew your certificate automatically.
     
  ### Automating renewal
 The Certbot packages on your system come with a cron job that will renew your certificates automatically before they expire. Since Let's Encrypt certificates last for 90 days, it's highly advisable to take advantage of this feature. You can test automatic renewal for your certificates by running this command:
@@ -93,7 +96,7 @@ Some reasons your https is still not activating
 
             proxy_pass http://127.0.0.1:ADDYOURPORTNUMBER;
             
-Save and Exit
+save [CTRL+O] [enter] [CTRL+X]
 
 3. You entered the wrong port number
 
