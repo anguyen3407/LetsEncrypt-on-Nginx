@@ -2,7 +2,7 @@
 
 Short and simple way to secure your website.
 
-### Install NGINX
+## Install NGINX
 If you've already installed nginx, you can skip this step.
 `sudo apt-get install nginx;`
 
@@ -31,15 +31,15 @@ copy and paste this into the folder
  
 save `CTRL+O` `ENTER` `CTRL+X`
 
-### Let's Encrypt
+## Let's Encrypt
 
 Go to this website
 `https://letsencrypt.org/getting-started/`
 
-Scroll down to the 'With Shell Access'paragraph and click on the blue `Certbot` link.
+Scroll down to the "With Shell Access" paragraph and click on the blue `Certbot` link.
 Choose your software `nginx` and system `Ubuntu 16.04`
 
-#### Install 
+### Install 
 
 Open up your terminal 
 
@@ -55,7 +55,7 @@ On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your lis
     $ sudo apt-get update
     $ sudo apt-get install python-certbot-nginx 
     
- #### Get Started
+ ### Get Started
  Certbot has an Nginx plugin, which is supported on many platforms, and automates both obtaining and installing certs:
  
     $ sudo certbot --nginx
@@ -64,14 +64,16 @@ Running this command will get a certificate for you and have Certbot edit your N
     
     $ sudo certbot --nginx certonly
     
- #### Automating renewal
+ ### Automating renewal
 The Certbot packages on your system come with a cron job that will renew your certificates automatically before they expire. Since Let's Encrypt certificates last for 90 days, it's highly advisable to take advantage of this feature. You can test automatic renewal for your certificates by running this command:
 
     $ sudo certbot renew --dry-run
     
-If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
+** If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
  
     certbot renew 
+
+
 
 
 ###### https://github.com/anguyen3407/Hosting-React-Digital-Ocean
