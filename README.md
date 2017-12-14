@@ -84,7 +84,7 @@ Some reasons your https is still not working
 
 `cd /etc/nginx/sites-available/`
 
-** Copy and paste the proxy_pass below and insert your port number
+** Copy and replace the proxy_pass below and insert your port number
 
             proxy_pass http://127.0.0.1:ADDYOURPORTNUMBER;
 
