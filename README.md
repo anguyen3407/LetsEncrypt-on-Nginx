@@ -80,9 +80,11 @@ If that appears to be working correctly, you can arrange for automatic renewal b
 To learn more about renewing, follow this link https://certbot.eff.org/docs/using.html#renewal
 
 # Troubleshooting
-Some reasons your https is still not working
+Some reasons your https is still not activating
 
-1. Your proxy_pass is incorrect
+1. You didn't install nginx. If you aren't sure whether you installed it or not, install it again. It will not affect anything. 
+
+2. Your proxy_pass is incorrect
 ** Open up your terminal
 
 `cd /etc/nginx/sites-available/`
@@ -92,6 +94,9 @@ Some reasons your https is still not working
             proxy_pass http://127.0.0.1:ADDYOURPORTNUMBER;
             
 Save and Exit
+
+3. You entered the wrong port number
+
 
 ###### https://github.com/anguyen3407/Hosting-React-Digital-Ocean
 ###### https://letsencrypt.org/getting-started/
