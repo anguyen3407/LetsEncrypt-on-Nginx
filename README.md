@@ -1,6 +1,6 @@
 # LetsEncrypt-on-Nginx
 
-Short and simple way to secure your website.
+Short, simple and free way to secure your website.
 
 ## Install NGINX
 If you've already installed nginx, you can skip this step.
@@ -45,7 +45,7 @@ Open up your terminal
 
     ssh root@YOURDOMAINNAME.com
 
-    enter your password
+    ** enter your password
 
 On Ubuntu systems, the Certbot team maintains a PPA. Once you add it to your list of repositories all you'll need to do is apt-get the following packages.
 
@@ -69,7 +69,7 @@ The Certbot packages on your system come with a cron job that will renew your ce
 
     $ sudo certbot renew --dry-run
     
-** If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
+If that appears to be working correctly, you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
  
     certbot renew 
 
