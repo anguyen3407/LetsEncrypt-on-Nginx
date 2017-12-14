@@ -90,6 +90,7 @@ Some reasons your https is still not activating
 1. You didn't install nginx. If you aren't sure whether you installed it or not, install it again. It will not affect anything. 
 
 2. Your proxy_pass is incorrect
+
 ** Open up your terminal
 
 `cd /etc/nginx/sites-available/`
